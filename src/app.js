@@ -23,7 +23,7 @@ app.use(cookieParser()); //parses cookie header and populate req.cookies with an
 //Middleware appicable differently in different environments
 if (process.env.NODE_ENV === "production") {
   app.use(yes()); //yes-https makes it easy to require https for connect based applications.
-  app.use(helmet); //helmet adds various http headers, making the app more secure
+  app.use(helmet()); //helmet adds various http headers, making the app more secure
 } else {
   app.use(logger("dev")); //morgan displays concise output colored by response status for development use
 }
