@@ -1,6 +1,6 @@
 {
-  "short_name": "PERN Boilerplate",
-  "name": "Boilerplate application using the PERN Stack",
+  "short_name": "MERN Boilerplate",
+  "name": "Boilerplate application using the MERN Stack",
   "icons": [
     {
       "src": "favicon.ico",
