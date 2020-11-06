@@ -53,7 +53,7 @@ I am still working on the documentation and comments to make the codebase more u
       AUTH_EXPIRES_IN_SECONDS = 3600
       DB_URI = "mongodb+srv://root:changethispasswordtosomethingstronger@spicebox.cogir.mongodb.net/cumin?retryWrites=true&w=majority"
       ```
-* Locate a file called  `.env.sample` in the client directory and rename it to just `.env`. Set the variable REACT_APP_DEFAULT_LOGIN_REDIRECT to the value "/dashboard". This file should have only `REACT_APP_DEFAULT_LOGIN_REDIRECT = "/dashboard"` at this point.
+* Locate a file called  `.env.sample` in the client directory and rename it to just `.env`. Keep the variable REACT_APP_DEFAULT_LOGIN_REDIRECT as "/dashboard" for now. You can change it later to some other route, but that route needs to be added as a valid react route in that case.
 * Open a terminal and cd into the root directory of the project. If using VS code, simply press ``ctrl + ` `` to open the terminal window, make sure that you are in the root directory and not in some other directory. Then run the command `npm run get-started`. This will install all the node modules for both the frontend and backend.
 * Run `npm run dev` from the root directory itself to start the project up.
 * Optionally, run `npm run build` from the root directory itself to build a production ready version of the client in the `client/build` directory.
