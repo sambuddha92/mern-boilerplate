@@ -1,4 +1,3 @@
-require("dotenv").config({ silent: process.env.NODE_ENV === 'production' });
 const mongoose = require("mongoose");
 
 const dbURI = process.env.DB_URI;

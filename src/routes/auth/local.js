@@ -1,4 +1,3 @@
-require("dotenv").config({ silent: process.env.NODE_ENV === 'production' });
 const express = require("express"),
   router = express.Router(),
   bcrypt = require("bcryptjs"),
