@@ -1,4 +1,4 @@
-require("dotenv").config();
+require("dotenv").config({ silent: process.env.NODE_ENV === 'production' });
 const express = require("express"),
   cookieParser = require("cookie-parser"),
   helmet = require("helmet"),
