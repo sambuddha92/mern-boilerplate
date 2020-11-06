@@ -49,8 +49,16 @@ const Signin = () => {
       }
     } catch (error) {
       console.error(error);
+
       if (error.response && error.response.data) {
-        window.alert(error.response.data.message);
+        console.log(error.response);
+        console.log(error.response.data);
+        if (error.response.data.message) {
+          console.log(error.response.data.message);
+          window.alert(error.response.data.message);
+        } else {
+          window.alert("Something went wrong.");
+        }
       }
     }
   };
