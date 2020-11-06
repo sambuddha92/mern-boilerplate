@@ -1,4 +1,6 @@
 # MERN Boilerplate
+[Demo website](https://github.com/sambuddha92/mern-boilerplate)
+
 A simple boilerplate application built using the MERN stack. On this application, a user can Register, Login and browse private pages that are accessible to only logged in users. It should be possible to build on this project to build more complex applications.
 
 The key technologies used are as follows:
