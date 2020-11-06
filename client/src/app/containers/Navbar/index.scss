@@ -1,0 +1,33 @@
+@import "../../styles/_variables.scss";
+
+$nav-height: 3rem;
+
+.Navbar {
+    background-color: map-get($color, "dark");
+    color: map-get($color, "light");
+    font-size: map-get($size, "sm");
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: map-get($z-index, "highest");
+
+    .inner {
+        align-items: center;
+        display: flex;
+        height: $nav-height;
+        justify-content: space-between;
+
+        a {
+            display: inline-block;
+        }
+
+        .active {
+            color: map-get($color, "grey");
+        }
+    }
+}
+
+.Navbar-Offset {
+    height: $nav-height;
+}

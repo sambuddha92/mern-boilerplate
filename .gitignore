@@ -1,0 +1,12 @@
+.DS_Store
+
+.env
+.env.production
+access.log
+
+client/build
+node_modules
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

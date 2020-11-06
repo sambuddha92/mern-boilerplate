@@ -1,0 +1,58 @@
+@import "./variables";
+.container {
+  background-color: transparent;
+  &.is-fluid {
+    margin: 0;
+    max-width: 100%;
+    @media screen and (max-width: map-get($breakpoint, "mobile")) {
+      padding: 0 map-get($breather, "mobile");
+    }
+    @media screen and (min-width: map-get($breakpoint, "mobile") + 1px) and (max-width: map-get($breakpoint, "tablet")) {
+      padding: 0 map-get($breather, "tablet");
+    }
+    @media screen and (min-width: map-get($breakpoint, "tablet") + 1px) and (max-width: map-get($breakpoint,"medium")) {
+      padding: 0 map-get($breather, "medium");
+    }
+    @media screen and (min-width: map-get($breakpoint,"medium") + 1px) and (max-width: map-get($breakpoint,"laptop")) {
+      padding: 0 map-get($breather, "laptop");
+    }
+    @media screen and (min-width: map-get($breakpoint,"laptop") + 1px) and (max-width: map-get($breakpoint,"desktop")) {
+      padding: 0 map-get($breather, "desktop");
+    }
+    @media screen and (min-width: map-get($breakpoint,"desktop") + 1px) {
+      padding: 0 map-get($breather, "full");
+    }
+  }
+
+  &.is-fixed {
+    margin: auto;
+    padding: 0;
+    @media screen and (max-width: map-get($breakpoint, "mobile")) {
+      width: 100% - 2 * map-get($breather, "mobile");
+    }
+    @media screen and (min-width: map-get($breakpoint, "mobile") + 1px) and (max-width: map-get($breakpoint, "tablet")) {
+      width: 100% - 2 * map-get($breather, "tablet");
+    }
+    @media screen and (min-width: map-get($breakpoint, "tablet") + 1px) and (max-width: map-get($breakpoint,"medium")) {
+      width: 100% - 2 * map-get($breather, "medium");
+    }
+    @media screen and (min-width: map-get($breakpoint,"medium") + 1px) and (max-width: map-get($breakpoint,"laptop")) {
+      width: 100% - 2 * map-get($breather, "laptop");
+    }
+    @media screen and (min-width: map-get($breakpoint,"laptop") + 1px) and (max-width: map-get($breakpoint,"desktop")) {
+      width: 100% - 2 * map-get($breather, "desktop");
+    }
+    @media screen and (min-width: map-get($breakpoint,"desktop") + 1px) {
+      width: 100% - 2 * map-get($breather, "full");
+    }
+  }
+}
+
+.buttons {
+  align-items: center;
+  display: flex;
+  padding: {
+    top: map-get($spacing, "xs");
+    bottom: map-get($spacing, "xs");
+  };
+}

@@ -1,0 +1,33 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "engines": {
+    "node": "10.16.0",
+    "npm": "7.0.3"
+  },
+  "scripts": {
+    "get-started": "npm install && cd client && npm install",
+    "build": "cd client && npm install && npm run build",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix ./client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Sambuddha Adhikari",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^5.3.0",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^4.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.12",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.4",
+    "yes-https": "^2.0.0"
+  }
+}
