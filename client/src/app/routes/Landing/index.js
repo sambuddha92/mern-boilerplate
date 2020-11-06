@@ -12,9 +12,9 @@ const Landing = () => {
   return (
     <div className="Landing">
       <div className="inner container is-fluid">
-        <h1 className="title is-xxxxl has-text-centered">PERN Boilerplate</h1>
+        <h1 className="title is-xxxxl has-text-centered">MERN Boilerplate</h1>
         <p className="is-lg subtitle has-text-centered">
-          A boilerplate application built using PostgreSQL, Express, React and
+          A boilerplate application built using MongoDB, Express, React and
           NodeJS
         </p>
         {auth.isAuthenticated ? (
